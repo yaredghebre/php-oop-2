@@ -5,8 +5,8 @@ class Kennels extends Product {
     private $size;
     private $color;
 
-    public function __construct($_title, $_image, $_price, $_size, $_color) {
-        parent::__construct($_title, $_image, $_price);
+    public function __construct($_title, $_image, $_price, Category $_category, $_size, $_color) {
+        parent::__construct($_title, $_image, $_price, $_category);
         $this->size = $_size;
         $this->color = $_color;
     }
